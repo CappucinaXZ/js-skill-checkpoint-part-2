@@ -9,6 +9,11 @@ const techcoolPeople = [
   { name: "Eve", age: 19 },
 ];
 
-const allPeople = [];
-
+const allPeople = [...techupPeople,...techcoolPeople];
 // เริ่มเขียนโค้ดตรงนี้
+
+console.log(allPeople)
+
+const result = allPeople.filter(result => result.age<20)
+
+console.log(result)
