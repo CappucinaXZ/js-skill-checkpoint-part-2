@@ -6,7 +6,7 @@ let getUsers = async() => {
 }
 async function asynchronousFunction() {
     const users = await getUsers();
-    console.log(users)
+    //console.log(users)
     //console.log(users[0].name.length)
     let result = users.filter(result => result.name.length>17).map(result => result.name)
     console.log(result)
